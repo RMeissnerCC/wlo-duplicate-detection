@@ -15,11 +15,18 @@ sh build.sh
 ```
 ## Training (calculate hashes)
 
-The `data` folder contains the dataset with one entry (document) per line. The first word of each line is the document's ID. 
+The `data` folder contains the dataset with one entry (document) per line. 
 
-- The following script calculates the hashes for each document and stores the interim data, which is necessary for prediction, also in the data folder.
+The entry structure, tab-spaced:
 
-```
+- document ID.
+- document URL
+- document description (short)
+
+
+The following script calculates the hashes for each document and stores the interim data, which is necessary for prediction, also in the data folder.
+
+```bash
 sh runTraining.sh
 ```
 
